@@ -1,15 +1,15 @@
-function checkAge(age) {
-  if (age >= 18) {
-    return true;
-  } else {
-    return confirm('Do you have permission from your parents?');
-  }
+// Function to calculate simple interest
+function calculateSimpleInterest(principal, rate, time) {
+    // Formula for simple interest
+    const interest = (principal * rate * time) / 100;
+    return interest;
 }
 
-let age = prompt('How old are you?', 18);
+// Example usage
+const principal = 10; // Principal amount
+const rate = 50;         // Interest rate
+const time = 73;         // Time in years
 
-if ( checkAge(age) ) {
-  alert( 'Access granted' );
-} else {
-  alert( 'Access denied' );
-}
+// Calculate interest
+const interest = calculateSimpleInterest(principal, rate, time);
+console.log(`Simple Interest: ${interest}`);
